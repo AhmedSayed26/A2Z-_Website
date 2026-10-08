@@ -77,12 +77,19 @@ export default function SiteHeader() {
           </a>
           <button
             type="button"
-            className=" btn bg-transparent py-0! px-3.5! h-11.5 cursor-pointer"
+            className="mag btn"
             lang={lang === "en" ? "ar" : "en"}
             aria-label={t("header.switchLanguage")}
             onClick={() => changeLanguage(lang === "en" ? "ar" : "en")}
           >
-            {t("header.languageButton")}
+            <span className="fill" aria-hidden="true" />
+            <span className="lbl">{t("header.languageButton")}</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+              />
+            </svg>
           </button>
           <button
             className="mbtn w-11.5 h-11.5 items-center justify-center border border-ink bg-transparent text-ink cursor-pointer"

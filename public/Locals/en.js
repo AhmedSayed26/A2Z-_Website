@@ -16,6 +16,18 @@ const en = {
     "switchLanguage": "Switch to Arabic",
     "languageButton": "العربية"
   },
+  "loader": {
+    "sysInit": "INITIALIZING SYSTEM CORE...",
+    "assets": "LOADING EDITORIAL ASSETS...",
+    "calibrating": "CALIBRATING MEDIA STREAM...",
+    "ready": "SYSTEM READY // A2Z MEDIA",
+    "status": "SYS.STATUS",
+    "location": "RIYADH · AL OLAYA",
+    "coordinates": "24.71° N · 46.67° E",
+    "tagline": "MEDIA & PRODUCTION · STRATEGIC COMMUNICATION",
+    "skip": "SKIP [ESC]",
+    "loading": "Loading..."
+  },
   "common": {
     "letsTalk": "Let's Talk",
     "tagline": "A2Z Media, Production & Strategic Communication provides integrated media and marketing solutions that help companies build a strong presence and achieve real impact.",

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 940" preserveAspectRatio="xMinYMid slice" role="img" aria-label="Riyadh skyline at dusk with data overlays">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0F1F"/>
+      <stop offset=".35" stop-color="#2F49E0"/>
+      <stop offset=".62" stop-color="#8E9BFF"/>
+      <stop offset=".8" stop-color="#F3B58A"/>
+      <stop offset="1" stop-color="#F7D9B5"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFF4DC"/>
+      <stop offset=".25" stop-color="#FFD9A0" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FFB27A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A4BB8"/>
+      <stop offset="1" stop-color="#1B2260"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A2268"/>
+      <stop offset="1" stop-color="#0B0F1F"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B74FF"/>
+      <stop offset="1" stop-color="#14195A"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".42" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".62" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <pattern id="win" width="10" height="14" patternUnits="userSpaceOnUse">
+      <rect x="2" y="3" width="4" height="6" fill="#FFD9A0" opacity=".85"/>
+    </pattern>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#5B74FF" stroke-opacity=".18"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1680" height="940" fill="#fff"/>
+  <rect width="1680" height="940" fill="url(#sky)"/>
+  <rect width="1680" height="940" fill="url(#grid)"/>
+
+  <!-- clouds -->
+  <g fill="#fff" opacity=".16">
+    <ellipse cx="260" cy="140" rx="220" ry="26"/>
+    <ellipse cx="640" cy="230" rx="260" ry="22"/>
+    <ellipse cx="980" cy="120" rx="200" ry="20"/>
+    <ellipse cx="420" cy="330" rx="180" ry="16"/>
+  </g>
+
+  <!-- sun -->
+  <circle cx="1020" cy="610" r="260" fill="url(#sun)"/>
+  <circle cx="1020" cy="610" r="22" fill="#FFF4DC"/>
+
+  <!-- far skyline -->
+  <g fill="url(#far)" opacity=".85">
+    <rect x="80" y="560" width="70" height="240"/>
+    <rect x="170" y="520" width="56" height="280"/>
+    <rect x="250" y="580" width="90" height="220"/>
+    <rect x="700" y="540" width="60" height="260"/>
+    <rect x="780" y="580" width="80" height="220"/>
+    <rect x="880" y="520" width="50" height="280"/>
+    <rect x="950" y="590" width="90" height="210"/>
+    <rect x="1060" y="550" width="64" height="250"/>
+    <rect x="1140" y="600" width="100" height="200"/>
+  </g>
+
+  <!-- Kingdom Centre -->
+  <g>
+    <path d="M430 800 V300 Q430 270 450 262 H560 Q580 270 580 300 V800 Z" fill="url(#glass)"/>
+    <path d="M462 330 Q505 520 548 330 Q505 300 462 330 Z" fill="#F3B58A" opacity=".95"/>
+    <path d="M462 330 Q505 520 548 330" fill="none" stroke="#C9D2FF" stroke-width="4"/>
+    <rect x="430" y="560" width="150" height="240" fill="url(#win)" opacity=".55"/>
+    <path d="M430 262 H580" stroke="#C9D2FF" stroke-width="4"/>
+  </g>
+
+  <!-- Al Faisaliah -->
+  <g>
+    <path d="M640 800 L664 380 H696 L720 800 Z" fill="url(#glass)"/>
+    <path d="M680 250 L706 380 H654 Z" fill="#8E9BFF"/>
+    <circle cx="680" cy="338" r="22" fill="#F3B58A" stroke="#C9D2FF" stroke-width="3"/>
+    <rect x="662" y="480" width="36" height="320" fill="url(#win)" opacity=".5"/>
+    <path d="M680 250 V224" stroke="#C9D2FF" stroke-width="3"/>
+  </g>
+
+  <!-- near skyline -->
+  <g fill="url(#near)">
+    <rect x="300" y="640" width="96" height="190"/>
+    <rect x="760" y="600" width="100" height="230"/>
+    <rect x="870" y="660" width="120" height="170"/>
+    <rect x="1000" y="620" width="84" height="210"/>
+    <rect x="1100" y="680" width="150" height="150"/>
+    <rect x="120" y="680" width="150" height="150"/>
+  </g>
+  <g fill="url(#win)" opacity=".7">
+    <rect x="300" y="640" width="96" height="190"/>
+    <rect x="760" y="600" width="100" height="230"/>
+    <rect x="870" y="660" width="120" height="170"/>
+    <rect x="1000" y="620" width="84" height="210"/>
+    <rect x="1100" y="680" width="150" height="150"/>
+    <rect x="120" y="680" width="150" height="150"/>
+  </g>
+
+  <!-- ground / road glow -->
+  <rect y="810" width="1680" height="130" fill="#0B0F1F"/>
+  <path d="M0 830 H1680" stroke="#2F49E0" stroke-width="2" opacity=".8"/>
+  <g stroke="#FFD9A0" stroke-width="3" opacity=".6">
+    <path d="M60 870 H220"/><path d="M300 880 H520"/><path d="M620 868 H760"/><path d="M860 884 H1100"/>
+  </g>
+
+  <!-- signal rings (matches .sig ring motif) -->
+  <g fill="none" stroke="#fff" stroke-width="1.5" filter="url(#glow)">
+    <circle cx="505" cy="420" r="150" opacity=".5"/>
+    <circle cx="505" cy="420" r="260" opacity=".3"/>
+    <circle cx="505" cy="420" r="380" opacity=".15"/>
+  </g>
+
+  <!-- holographic panels -->
+  <g filter="url(#glow)" stroke="#C9D2FF" stroke-width="1.5">
+    <g transform="translate(120 250)">
+      <rect width="220" height="120" fill="#0B0F1F" fill-opacity=".45"/>
+      <path d="M16 96 L56 70 L96 82 L136 44 L176 56 L204 22" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <path d="M16 104 H204" stroke-opacity=".5"/>
+    </g>
+    <g transform="translate(760 200)">
+      <rect width="200" height="110" fill="#0B0F1F" fill-opacity=".45"/>
+      <g fill="#fff" stroke="none">
+        <rect x="18" y="68" width="16" height="30"/><rect x="42" y="54" width="16" height="44"/>
+        <rect x="66" y="40" width="16" height="58"/><rect x="90" y="48" width="16" height="50"/>
+        <rect x="114" y="28" width="16" height="70"/><rect x="138" y="18" width="16" height="80"/>
+      </g>
+    </g>
+    <g transform="translate(240 470)">
+      <rect width="170" height="110" fill="#0B0F1F" fill-opacity=".45"/>
+      <circle cx="56" cy="55" r="32" fill="none" stroke-opacity=".4"/>
+      <path d="M56 23 A32 32 0 1 1 25 64" fill="none" stroke="#fff" stroke-width="5"/>
+      <text x="40" y="60" fill="#fff" stroke="none" font-family="IBM Plex Mono, monospace" font-size="15">72%</text>
+      <path d="M108 40 H156 M108 58 H148 M108 76 H156" stroke-opacity=".6"/>
+    </g>
+  </g>
+
+  <!-- fade to white for headline area -->
+  <rect width="1680" height="940" fill="url(#fadeR)"/>
+</svg>

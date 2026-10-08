@@ -5,17 +5,17 @@ import Link from "next/link";
 import { useTranslation } from "../LanguageProvider";
 
 export default function Hero() {
-  const { t , i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section className="hero2" aria-label={t("hero.aria")}>
       <Image
         className="bg"
-        src="/design/a60100e6.png"
+        src="/design/hero8.png"
         alt={t("hero.alt")}
         fill
         priority
         quality={100}
-        sizes="100vw"
+        // sizes="100vw"
       />
       <div className="wrap relative flex">
         <div className="copy flex flex-col gap-7.5">

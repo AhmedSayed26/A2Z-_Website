@@ -7,6 +7,7 @@ import {
 import LanguageProvider from "../components/LanguageProvider";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
+import SitePreloader from "../components/shared/SitePreloader";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
       <body>
         <div id="top" className="w-full overflow-x-clip bg-paper">
           <LanguageProvider>
+            <SitePreloader />
             <SiteHeader />
             {children}
             <SiteFooter />
