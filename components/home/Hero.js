@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="hero2" aria-label={t("hero.aria")}>
       <Image
-        className="bg"
+        className="bg hidden md:block xl:block sm:block"
         src="/design/hero8.png"
         alt={t("hero.alt")}
         fill

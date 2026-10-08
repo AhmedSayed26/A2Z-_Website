@@ -68,7 +68,7 @@ export default function SiteHeader() {
           >
             <span className="fill" aria-hidden="true" />
             <span className="lbl">{t("header.letsTalk")}</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
+            <svg width="15" height="15" className="hidden md:block" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 fill="currentColor"
                 d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
