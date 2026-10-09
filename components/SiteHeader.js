@@ -61,13 +61,13 @@ export default function SiteHeader() {
         </nav>
         <div className="flex items-center gap-3">
           <a
-            className="mag btn"
+            className="mag btn "
             href="https://wa.me/201067504693"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="fill" aria-hidden="true" />
-            <span className="lbl">{t("header.letsTalk")}</span>
+            <span className="lbl whitespace-nowrap">{t("header.letsTalk")}</span>
             <svg width="15" height="15" className="hidden md:block" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 fill="currentColor"
