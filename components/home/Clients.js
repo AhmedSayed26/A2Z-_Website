@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import CountUp from "../shared/CountUp";
 import LogoSlider from "../shared/LogoSlider";
 import { CLIENT_LOGOS, STATS } from "../../lib/content";
@@ -31,7 +32,9 @@ export default function Clients() {
             ))}
           </div>
           <div className="rv min-w-0">
-            <LogoSlider logos={CLIENT_LOGOS} />
+            <Suspense fallback={<div className="h-31" />}>
+              <LogoSlider logos={CLIENT_LOGOS} />
+            </Suspense>
           </div>
         </div>
       </div>
