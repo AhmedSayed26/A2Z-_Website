@@ -14,7 +14,7 @@ export default function LogoSlider({ logos }) {
       spaceBetween={16}
       slidesPerView={2}
       scrollbar={{ draggable: true, hide: false }}
-      autoplay={{ delay: 1200, disableOnInteraction: false, pauseOnMouseEnter: true }}
+      autoplay={{ delay: 1000, disableOnInteraction: false, pauseOnMouseEnter: true }}
       breakpoints={{
         560: { slidesPerView: 3 },
         860: { slidesPerView: 4 },
@@ -31,7 +31,7 @@ export default function LogoSlider({ logos }) {
               src={logo.src}
               alt={logo.alt}
               width={140}
-              height={64} 
+              height={80} 
               className="w-auto h-auto max-w-[80%] max-h-40 object-contain"
             />
           </div>
